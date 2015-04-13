@@ -3,25 +3,25 @@ $(document).ready(function(){
                   function(response) {
                         
                         for(var i=0; i<15; i++) {
-  							var colNum = console.log(response.statuses[i].user.statuses_count);
-						};
+  							// console.log(response.statuses[i].user.statuses_count);
+						
 
-						if (colNum.length = 1) {
-							$("body").append("<div style=color:#" + colNum + "ababa></div>" )
-						} else if (colNum.length = 2) {
-							$("body").append("<div style=color:#" + colNum + "abab></div>" )
-						} else if (colNum.length = 3) {
-							$("body").append("<div style=color:#" + colNum + "aba></div>" )
-						} else if (colNum.length = 4) {
-							$("body").append("<div style=color:#" + colNum + "ab></div>" )
-						} else if (colNum.length = 5) {
-							$("body").append("<div style=color:#" + colNum + "a></div>" )
-						} else if (colNum.length = 6) {
-							$("body").append("<div style=color:#" + colNum + "></div>" )
+						if (response.statuses[i].user.statuses_count.length = 1) {
+							$("document.body.div.style.backgroundColor") = "#" + response.statuses[i].user.statuses_count + "ababa"; 
+						} else if (response.statuses[i].user.statuses_count.length = 2) {
+							$("body").append("<div style=color:#" + response.statuses[i].user.statuses_count + "abab></div>" )
+						} else if (response.statuses[i].user.statuses_count.length = 3) {
+							$("body").append("<div style=color:#" + response.statuses[i].user.statuses_count + "aba></div>" )
+						} else if (response.statuses[i].user.statuses_count.length = 4) {
+							$("body").append("<div style=color:#" + response.statuses[i].user.statuses_count + "ab></div>" )
+						} else if (response.statuses[i].user.statuses_count.length = 5) {
+							$("body").append("<div style=color:#" + response.statuses[i].user.statuses_count + "a></div>" )
+						} else if (response.statuses[i].user.statuses_count.length = 6) {
+							$("body").append("<div style=color:#" + response.statuses[i].user.statuses_count + "></div>" )
 						} else {
-							$("body").append("<div style=color:#" + colNum + "></div>" )
+							$("body").append("<div style=color:#" + response.statuses[i].user.statuses_count + "></div>" )
 						}
-                        
+                        };
               });
             
             })
