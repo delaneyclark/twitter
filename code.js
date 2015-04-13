@@ -13,6 +13,7 @@ $(document).ready(function(){
 
 						if (response.statuses[i].user.statuses_count.length === 1) {
 							$("body").append("<div style=color:#" + response.statuses[i].user.statuses_count + "ababa></div>" )
+							$("div").css("<div style=color:#" + response.statuses[i].user.statuses_count + "ababa></div>" )
 						} else if (response.statuses[i].user.statuses_count.length === 2) {
 							$("body").append("<div style=color:#" + response.statuses[i].user.statuses_count + "abab></div>" )
 						} else if (response.statuses[i].user.statuses_count.length === 3) {
